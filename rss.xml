@@ -5,8 +5,53 @@
         <link>http://example.com</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Sun, 04 Jun 2023 18:34:17 +0800</pubDate>
-        <lastBuildDate>Sun, 04 Jun 2023 18:34:17 +0800</lastBuildDate>
+        <pubDate>Mon, 12 Jun 2023 13:14:23 +0800</pubDate>
+        <lastBuildDate>Mon, 12 Jun 2023 13:14:23 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2023/06/12/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/</guid>
+            <title>网络安全及网络攻防</title>
+            <link>http://example.com/2023/06/12/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/</link>
+            <pubDate>Mon, 12 Jun 2023 13:14:23 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;网络安全及网络攻防&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络安全及网络攻防&#34;&gt;#&lt;/a&gt; &lt;strong&gt;网络安全及网络攻防&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;为什么经行网络安全实战攻防演练&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么经行网络安全实战攻防演练&#34;&gt;#&lt;/a&gt; &lt;em&gt;为什么经行网络安全实战攻防演练&lt;/em&gt; *&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;政策要求驱动&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;2017 年 6 月 1 日我国第一部网络安全法《中华人民共和国网络安全法》正式实施&lt;/li&gt;
+&lt;li&gt;2018 年 4 月 20 日全国网络安全和信息化工作会议在京召开，会议强调了 “没有网络安全就没有国家安全，就没有经济社会稳定运行，广大人民群众利益也难以得到保障。&lt;br&gt;
+要树立正确的网络安全观，加强信息基础设施网络安全防护，加强网络安全信息统筹机制、手段、平台建设，加强网络安全事件应急指挥能力建设，积极发展网络安全产业，&lt;br&gt;
+做到关口前移，防患于未然。要落实关键信息基础设施防护责任，行业、企业作为关键信息基础设施运营者承担主体防护责任，主管部门履行好监管责任。”&lt;/li&gt;
+&lt;li&gt;2020 年 7 月，公安部印发《贯彻落实网络安全等级保护制度和关键信息基础设施安全保护制度的指导意见》，&lt;br&gt;
+《意见》明确了网络安全保护 “实战化、体系化、常态化” 和 “动态防御、主动防御、纵深防御、精准防护、整体防控、联防联控” 的 “&lt;strong&gt;三化六防&lt;/strong&gt;” 要求，而实战攻防演练是推动和检验 “三化六防” 水平的重要手段。&lt;br&gt;
+《意见》提出:“关键信息基础设施运营者和第三级以上网络运营者应定期开展应急演练，有效处置网络安全事件，并针对应急演练中发现的突出问题和漏洞隐患，及时整改加固，完善保护措施。&lt;br&gt;
+行业主管部门、网络运营者应配合公安机关每年组织开展的网络安全监督检查、比武演习等工作，不断提升安全保护能力和对抗能力。”&lt;br&gt;
+ 该文件明确了组织开展实战化演练的责任主体和演练目的，即通过实战化比武演练不断提升安全保护能力和对抗能力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;安全威胁驱动&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;针对我国主要信息系统的高强度、有组织的攻击威胁形势严峻。&lt;/li&gt;
+&lt;li&gt;工业互联网面临的网络安全威胁加剧。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;实战攻防演练的发展现状&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#实战攻防演练的发展现状&#34;&gt;#&lt;/a&gt; 实战攻防演练的发展现状&lt;/h2&gt;
+&lt;h1 id=&#34;我国实战攻防演练的发展分为两个阶段第一阶段是试验阶段-以学习先进实战经验为主参演单位少演练范围小第二阶段是推广阶段实战演练发展飞速参演单位数量暴增演练走向规模化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#我国实战攻防演练的发展分为两个阶段第一阶段是试验阶段-以学习先进实战经验为主参演单位少演练范围小第二阶段是推广阶段实战演练发展飞速参演单位数量暴增演练走向规模化&#34;&gt;#&lt;/a&gt; 我国实战攻防演练的发展分为两个阶段：第一阶段是试验阶段， 以学习先进实战经验为主，参演单位少，演练范围小；第二阶段是推广阶段，实战演练发展飞速，参演单位数量暴增，演练走向规模化。&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;实战攻防演练向规模化演变&lt;/li&gt;
+&lt;li&gt;演练规则向成熟化演变&lt;/li&gt;
+&lt;li&gt;演练频度向常态化演变&lt;/li&gt;
+&lt;li&gt;攻击手段向多样化演变&lt;/li&gt;
+&lt;li&gt;安全防御向体系化演变&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;网络攻防中的角色&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网络攻防中的角色&#34;&gt;#&lt;/a&gt; 网络攻防中的角色 ##&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;蓝队：指网络实战攻防演练中的攻击一方&lt;/li&gt;
+&lt;li&gt;红队：指网络实战攻防演练中的防守一方&lt;/li&gt;
+&lt;li&gt;紫队：指网络实战攻防演练中的组织方&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://example.com/2023/06/04/hello-world/</guid>
             <title>Hello World</title>
