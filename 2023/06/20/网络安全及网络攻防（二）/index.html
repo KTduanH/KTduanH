@@ -1,0 +1,460 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+
+<link rel="canonical" href="http://example.com/2023/06/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%EF%BC%88%E4%BA%8C%EF%BC%89/">
+
+
+
+  <title>
+网络安全及网络攻防（二） |
+KTduanH = </title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">网络安全及网络攻防（二）
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-06-20 00:07:32">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-06-20T00:07:32+08:00">2023-06-20</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">KTduanH</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%EF%BC%88%E4%BA%8C%EF%BC%89/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="KTduanH">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p><strong>网络安全及网络攻防（二）</strong></p>
+<h1 id="网络攻防中红-蓝-紫队的组成及任务"><a class="markdownIt-Anchor" href="#网络攻防中红-蓝-紫队的组成及任务">#</a> <em>网络攻防中红、蓝、紫队的组成及任务</em></h1>
+<ol>
+<li><strong>蓝队</strong></li>
+</ol>
+<ul>
+<li>蓝队 - 般会针对目标单位的从业人员以及目标系统所在网络内的软件、硬件设备执行多角度、全方位、对抗性的混合式模拟攻击，<br>
+通过技术手段实现系统提权、控制业务、获取数据等渗透目标，从而发现系统、技术、人员、管理和基础架构等方面存在的网络安全隐患或薄弱环节。</li>
+<li>蓝队人员并不是一般意义上的黑客，黑客往往以攻破系统、获取利益为目标，<br>
+而蓝队则是以发现系统薄弱环节、提升系统安全性为目标。<br>
+此外，对于一般的黑客来说，只要发现某 - - 种攻击方法可以达成目标，通常就没有必要再去尝试其他的攻击方法和途径；<br>
+ 而蓝队的目标则是尽可能找出系统中存在的所有安全问题，因此蓝队往往会穷尽已知的所有方法来完成攻击。换句话说，蓝队人员需要的是全面的攻防能力，而不仅仅是一两项很强的黑客技术。</li>
+<li>蓝队的工作与业界熟知的渗透测试也有所区别。<br>
+渗透测试通常是指按照范技术流程对目标系统进行安全性测试，<br>
+而蓝队攻击 - - 般只限定攻击范围和工击时段，对具体的攻击方法则没有太多限制。<br>
+渗透测试过程一般只要 验证漏的存在即可，而蓝队攻击则要求实际获取系统权限或系统数据。此外，渗透试一般都会明确要求禁止使用社工手段 (通过对人的诱导、欺骗等方法完成攻击)。<br>
+而蓝队则可以在一定范围内使用社工手段。</li>
+<li>还有一点必须说明，虽然实战攻防演练过程中通常不会严格限定蓝队的攻击手法，但所有技术的使用、目标的达成都必须严格遵守国家相关的法律法规。<br>
+在演练中，蓝队通常会以 3 人为一一个战斗小组，1 人为组长，组长通常是蓝队中综合能力最强的，需要具备较强的组织意识、应变能力和丰富的实战经验，<br>
+而 2 名组员则往往需要各有所长，具备边界突破、横向拓展 (利用一台受控设备攻击其他相邻设备)、情报搜集或武器研制等某一方面或几方面的专长。</li>
+<li>蓝队工作对人员的能力要求往往是综合性的、全面的，蓝队人员不仅要会熟练使用各种黑客工具、分析工具，还要熟知目标系统及其安全配置，并具备一定的代码开发能力， 以便应对特殊问题。</li>
+</ul>
+<p>* 防守能力不断提升的同时，攻击能力也在与时俱进。目前，蓝队的工作已经变得非常体系化、职业化和工具化。<br>
+1) 体系化。从漏洞准备、工具准备到情报搜集、内网渗透等，蓝队的每个人都有明确的分工，还要具备团队作战能力，已经很少再有一个人干全套的情况了。<br>
+2) 职业化。蓝队人员都来自专职实战演练团队，有明确分工和职责，具备协同配合的职业操守，平时会开展专业训练。<br>
+3) 工具化。工具专业化程度持续提升，除了使用常用渗透工具，对基于开源代码的定制工具的应用也增多，自动化攻击也被大规模应用，如采用多 IP 出口的自动化攻击平台进行作业。</p>
+<p>* 从实战对抗的手法来看，现如今的蓝队还呈现出社工化、强对抗和迁回攻击的特点。<br>
+1) 社工化。利用人的弱点实施社会工程学攻击，是黑产团伙和高级威胁组<br>
+织的常用手段，如今也被大量引人实战攻防演练当中。<br>
+除了钓鱼、水坑等传统社工攻击手法外，端队还会经常通过在线客服、私信好友等多种交互方式进行社工攻击，以高效地获取业务信息。社工手段的多变性往往会让防守方防不胜防。<br>
+2) 强对抗。利用 0day 漏洞、Nday 潮洞、免杀技术等方式与防守方进行高强度的技术对抗，也是近一两年来蓝队在实战攻防演练中表现出的明显特点。<br>
+蓝队人员大多出自安全机构，受过专业训练，因而往往会比民间黑客更加了解安全软件的防护机制和安全系统的运行原理，其使用的对抗技术也往往更具针对性。<br>
+3) 迂回攻击。对于防护严密、有效监控的目标系统，正面攻击往往难以奏效。<br>
+这就迫使蓝队越来越多地采用迂回的攻击方式，将战线拉长：从目标系统的同级单位和下级单位下手，从供应链及业务合作方下手，在防护相对薄弱的关联机构中寻找突破点，迂回地攻破目标系统。</p>
+<ol start="2">
+<li><strong>红队</strong></li>
+</ol>
+<ul>
+<li>红队的主要工作包括演练前安全检查、整改与加固，演练期间网络安全监测、预警、分析、验证、处置，演练后期复盘和总结现有防护工作中的不足之处，为后续常态化的网络安全防护措施提供优化依据等。<br>
+实战攻防演练时，红队通常会在日常安全运维工作的基础上以实战思维进一步加强安全防护措施，<br>
+包括提升管理组织规格、扩大威胁监控范围、完善检测与防护手段、加快安全分析频率、提高应急响应速度、增强溯源反制能建立情报搜集利用机制等，进而提升整体防守能力。<br>
+需要特别说明的是，红队并不是由实战演练中目标系统运营单位一家组建的，而是由目标系统运营单位、安全运维团队、攻防专家、安全厂商、软件开发商、网络运维队伍、云提供商等多方共同组成的。<br>
+组成红队的各个团队在演练中的角色与分工情况如下。</li>
+</ul>
+<p>* 目标系统运营单位：负责红队整体的指挥、组织和协调。安全运营团队：负责整体防护和攻击监控工作。<br>
+* 攻防专家：负责对安全监控中发现的可疑攻击进行分析和研判，指导安全运营团队、软件开发商等相关部门进行漏洞整改等系列工作。a 安全厂商：负责对自身产品的可用性、可靠性和防护监控策略进行调整。口软件开发商：负责对自身系统进行安全加固、监控，配合攻防专家对发现的安全问题进行整改。<br>
+* 网络运维队伍：负责配合攻防专家进行网络架构安全维护、网络出口整体优化、网络监控以及溯源等工作。<br>
+* 云提供商 (如有): 负责对自身云系统进行安全加固，对云上系统的安全性进行监控，同时协助攻防专家对发现的问题进行整改。<br>
+* 其他：某些情况下还会有其他组成人员，需要根据实际情况分配具体工作。</p>
+<p>特别强调，对于红队来说，了解对手 (蓝队) 的情况非常重要，正所谓 “知彼才能知己”。<br>
+从攻击角度出发，了解攻击队的思路与打法，了解攻击队的思维，并结合本单位实际网络环境、运营管理情况，制定相应的技术防御和响应机制，才能在防守过程中争取到更大的主动权。</p>
+<ol start="3">
+<li><strong>紫队</strong><br>
+紫队在实战攻防演练中，以组织方角色开展演练的整体组织、协调工作，负责演练组织、过程监控、技术指导、应急保障、风险控制、演练总结、技术措施与优化策略建议等各类工作。<br>
+紫队组织蓝队对实际环境实施攻击，组织红队实施防守，<br>
+目的是通过演练检验参演单位的安全威胁应对能力、攻击事件检测发现能力、事件分析研判能力、事件响应处置能力以及应急响应机制与流程的有效性，提升参演单位的安全实战能力。<br>
+此外，针对某些不宜在实网中直接攻防的系统，或某些不宜实际执行的危险操作，紫队可以组织攻防双方进行沙盘推演，以便进 - 一步深入评估网络安全风险及可能面临的损失与破坏。</li>
+</ol>
+<h1 id="网络攻防中暴漏的问题"><a class="markdownIt-Anchor" href="#网络攻防中暴漏的问题">#</a> <em>网络攻防中暴漏的问题</em></h1>
+<p>1. 互联网未知资产或服务大量存在<br>
+ 2. 网络及子网内部安全域之间隔离措施不到位<br>
+ 3. 互联网应用系统常规漏洞过多<br>
+ 4. 互联网敏感信息泄露严重<br>
+ 5. 边界设备成为进入内网的缺口<br>
+ 6. 内网管理设备成为突破口<br>
+ 7. 安全设备自身安全成为新的风险点<br>
+ 8. 供应链攻击成为重要突破口<br>
+ 9. 员工安全意识淡薄<br>
+ 10. 内网环境及安全检测能力不足</p>
+
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-06-20 00:18:42" itemprop="dateModified" datetime="2023-06-20T00:18:42+08:00">2023-06-20</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="KTduanH 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="KTduanH 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="KTduanH 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>KTduanH <i class="ic i-at"><em>@</em></i>
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2023/06/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%EF%BC%88%E4%BA%8C%EF%BC%89/" title="网络安全及网络攻防（二）">http://example.com/2023/06/20/网络安全及网络攻防（二）/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2023/06/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuv80yoj20zk0m8kjl.jpg" title="网络安全及网络攻防">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>网络安全及网络攻防</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E4%B8%AD%E7%BA%A2-%E8%93%9D-%E7%B4%AB%E9%98%9F%E7%9A%84%E7%BB%84%E6%88%90%E5%8F%8A%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.</span> <span class="toc-text"> 网络攻防中红、蓝、紫队的组成及任务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E4%B8%AD%E6%9A%B4%E6%BC%8F%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text"> 网络攻防中暴漏的问题</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="KTduanH"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">KTduanH</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">3</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/06/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%EF%BC%88%E4%BA%8C%EF%BC%89/" title="网络安全及网络攻防（二）">网络安全及网络攻防（二）</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/06/20/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8F%8A%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/" title="网络安全及网络攻防">网络安全及网络攻防</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/06/04/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">KTduanH @ KTduanH</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2023/06/20/网络安全及网络攻防（二）/',
+    favicon: {
+      show: "（●´3｀●）やれやれだぜ",
+      hide: "(´Д｀)大変だ！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
